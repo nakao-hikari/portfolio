@@ -1,59 +1,27 @@
-$(function() {
+// Window幅に応じたメニュー表示の変更
+function ShowAndHide(win){
+  if(win < 769){
+    $("#button").show();
+    $("#lists").hide();
+  }else{
+    $("#button").hide();
+    $("#lists").show();
+  }
+}
 
-  // Menu Toggle
+$( function(){
 
-  $('#MenuButton').on('click', function () {
-    $(this).toggleClass('open');
-    $('#MenuList').slideToggle();
-  });
+  // 初めてページを開いた時の状態チェック
+  ShowAndHide($(window).width());
 
-  $('#MenuList a').on('click', function () {
-    if( window.innerWidth <= 768){
-      $('#MenuButton').removeClass('open');
-      $('#MenuList').slideToggle();
-    }
-  });
-
-  // Window Resize Function
-
+  // Windowサイズが変更された時の状態チェック
   $(window).resize(function(){
-
-    if( window.innerWidth <= 768){
-
-      $('#MenuList').hide();
-      $('#MenuButton').show();
-      $('#MenuButton').removeClass('open');
-
-    } else {
-
-      $('#MenuButton').hide();
-      $('#MenuList').show();
-
-    }
-
+    ShowAndHide($(window).width());
   });
 
-
-  // Smooth Scrool
-
-  $('a[href^="#"]').click(function() {
-
-    // �����ݒ�F�ړ�����(ms)�Ɠ��o���ʒu
-    var speed = 500;
-    var offset = -96;
-
-    // �A���J�[���擾
-    var anchor = $(this).attr("href");
-
-    // �^�[�Q�b�g�̈ʒu���擾
-    var target = $(anchor == "#" || anchor == "" ? 'html' : anchor);
-    var position = target.offset().top + offset;
-
-    // �X�N���[���i�A�j���[�V�����j
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
-
-    return false;
-
-   });
+  // メニューボタンクリック時のトグル動作
+  $("#button").click( function () {
+    $("#lists").slideToggle();
+  });
 
 });
