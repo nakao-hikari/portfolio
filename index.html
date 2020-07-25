@@ -2,55 +2,68 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <script src="jquery-3.2.1.min.js"></script>
-  <script src="script.js" defer></script>
-  <link href="style.css" rel="stylesheet" >
-  <title>Sample Site</title>
+  <meta charset="utf-8" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>MyPortfolio</title>
 </head>
 
 <body>
 
-  <div id="container">
-
-    <header>
-      <h1>Sample Site</h1>
-      <div id="button">
-        <img src="images/icon.png">
+  <header>
+    <h1>SamplePage</h1>
+    <nav>
+      <div id="MenuButton">
+        <span class="MenuButtonLine"></span>
+        <span class="MenuButtonLine"></span>
+        <span class="MenuButtonLine"></span>
       </div>
-      <nav>
-        <ul id="lists" >
-          <li><a href="#">Item01</a></li>
-          <li><a href="#">Item02</a></li>
-          <li><a href="#">Item03</a></li>
-          <li><a href="#">Item04</a></li>
+      <div id="MenuList">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#links">LINKS</a></li>
+          <li><a href="#skils">SKILS</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
-    <main>
+  <div id="wrapper">
 
-      <article>
-        <h1>article</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum a diam vitae congue. Curabitur sed egestas erat. Donec facilisis tristique elit, nec consequat erat consectetur sit amet. Morbi in dictum nulla, nec malesuada odio. Cras euismod orci vitae lectus bibendum, non mattis magna posuere. Pellentesque mi est, vulputate a orci quis, lobortis rutrum dui. Fusce commodo enim vel ultrices hendrerit. Curabitur lobortis velit et purus finibus tincidunt non sed est. Maecenas ac justo aliquet, consectetur ipsum a, imperdiet odio. Nam consectetur eros et ex viverra, ullamcorper venenatis sapien pharetra.</p>
-        <p>Morbi at magna eu dui consectetur convallis at vitae odio. Suspendisse sollicitudin lobortis tellus, eget varius augue fringilla sit amet. Etiam ligula odio, lacinia non erat quis, cursus iaculis mi. Vestibulum efficitur ante eu tellus fringilla, imperdiet pretium ex scelerisque. Quisque ornare scelerisque ligula, nec varius dolor malesuada quis. Nullam eleifend tortor sapien, sit amet vestibulum massa finibus ut. Ut ut ipsum eros. Etiam euismod eros non libero viverra lobortis. </p>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum a diam vitae congue. Curabitur sed egestas erat. Donec facilisis tristique elit, nec consequat erat consectetur sit amet. Morbi in dictum nulla, nec malesuada odio. Cras euismod orci vitae lectus bibendum, non mattis magna posuere. Pellentesque mi est, vulputate a orci quis, lobortis rutrum dui. Fusce commodo enim vel ultrices hendrerit. Curabitur lobortis velit et purus finibus tincidunt non sed est. Maecenas ac justo aliquet, consectetur ipsum a, imperdiet odio. Nam consectetur eros et ex viverra, ullamcorper venenatis sapien pharetra.</p>
-      </article>
+    <section id="home">
+      <h1>home</h1>
+      <p>Generated Dummy Text.<br>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was.</p>
+    </section>
 
-      <aside>
-        <h1>aside</h1>
-        <p>Morbi at magna eu dui consectetur convallis at vitae odio. Suspendisse sollicitudin lobortis tellus, eget varius augue fringilla sit amet. Etiam ligula odio, lacinia non erat quis, cursus iaculis mi. </p>
-        <p>finibus tincidunt non sed est. Maecenas ac justo aliquet, consectetur ipsum a, imperdiet odio. Nam consectetur eros et ex viverra, ullamcorper venenatis sapien pharetra.</p>
-      </aside>
+    <section id="about">
+      <h1>about</h1>
+      <p>Nakao Hikari<br>èÄîıíÜ</p>
+    </section>
 
-    </main>
+    <section id="works">
+      <h1>works</h1>
+      <p>Generated Dummy Text.<br>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was.</p>
+    </section>
 
-    <footer>
-      <h6>&copy; http://www.example.com</h6>
-    </footer>
+    <section id="links">
+      <h1>links</h1>
+      <p>Generated Dummy Text.<br>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was.</p>
+    </section>
+
+    <section id="skils">
+      <h1>skils</h1>
+      <p>èÄîıíÜ<br>
+    </section>
 
   </div>
 
+  <footer>
+    &copy; http://example.com
+  </footer>
+
 </body>
+
 </html>
